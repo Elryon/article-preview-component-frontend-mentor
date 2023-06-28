@@ -1,0 +1,176 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    width: 1150px;
+    height: 448px;
+    box-shadow: 0px 0px 9px 2px rgba(0,0,0,0.63); 
+}
+
+h1{
+    font-size: 27px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    margin: 0px;
+}
+
+h2{
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0px;
+    color: hsl(217, 19%, 35%);
+}
+
+
+p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0px;
+    color: hsl(212, 23%, 69%);
+}
+
+.mainPhoto{
+    width: 560px;
+    height: 448px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 408px;
+    justify-content: center;
+    gap: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    gap: 25px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 4fr 3fr 1fr;
+    height: 75px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.people{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.inside{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+
+.shareIcon{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-column-start: 3;
+}
+
+.popUpButton{
+    width: 20px;
+    height: 20px;
+}
+
+.activePopUp{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: hsl(214, 17%, 51%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: none;
+}
+
+.activePopUpIcon{
+    width: 20px;
+    height: 20px;
+}
+
+.sharePopUp{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    padding-left: 0px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 10px;
+    z-index: 2;
+    box-shadow: 0px 8px 2px -3px rgba(0,0,0,0.25);
+    bottom: 227px;
+    left: 492px;
+    display: none;
+}
+
+.sharePopUp:before{
+    position: relative;
+    background-color: hsl(217, 19%, 35%);
+    content: "";
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    bottom: -35px;
+    left: 125px;
+    z-index: 1;
+}
+
+.sharePopUp img{
+    height: 27px;
+    width: 27px;
+}
+
+.sharePopUp a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sharePopUp h3{
+    color: hsl(212, 23%, 69%);
+    font-size: 23px;
+    font-weight: 500;
+    margin: 0px;
+}
+
+.active{
+    display: flex;
+}
