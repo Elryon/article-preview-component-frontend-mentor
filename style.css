@@ -174,3 +174,28 @@ p{
 .active{
     display: flex;
 }
+
+
+@media screen and (max-width: 800px) {
+    section{
+        flex-direction: column;
+        width: 375px;
+        height: 800px;
+    }
+
+    .mainPhoto{
+        width: 375px;
+        height: 300px;
+    }
+
+    .group{
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 110px;
+    }
+
+    .sharePopUp{
+        bottom: 218px;
+        left: 121px;
+    }
+}
